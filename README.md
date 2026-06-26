@@ -1,2 +1,2 @@
-# TCC2-TREINAMENTO-TESTE
+# TCC2-Wanderson
 Desenolvimento de um modelo para decteçao de Retinopatia diabetica
