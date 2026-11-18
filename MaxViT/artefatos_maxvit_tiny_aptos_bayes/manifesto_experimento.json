@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-11-13T08:45:15.511351+00:00",
+  "dataset": "mariaherrerot/aptos2019",
+  "development_rows": 3296,
+  "test_rows": 366,
+  "model_name": "maxvit_tiny_tf_384.in1k",
+  "image_size": 384,
+  "normalization_mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "normalization_std": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "gradcam_target_layer": "stages[-1].blocks[-1]",
+  "batch_size": 4,
+  "accumulation_steps": 8,
+  "effective_batch_size": 32,
+  "num_workers": 2,
+  "pin_memory": true,
+  "final_n_splits": 5,
+  "final_max_epochs": 1000,
+  "final_patience": 20,
+  "resume_training": true,
+  "legacy_completed_folds": [],
+  "checkpoint_policy": "best model + last complete epoch + per-fold completion marker",
+  "artifact_directory": "/home/luis/Documentos/TCC-3--TREINAMENTO-TESTE/MaxViT/artefatos_maxvit_tiny_aptos_bayes",
+  "ensemble_method": "soft_voting_probability_mean",
+  "tuning_trials_target": 12,
+  "tuning_epochs": 8,
+  "tuning_max_per_class": 350,
+  "best_hyperparameters": {
+    "learning_rate": 0.0001920883520112673,
+    "weight_decay": 0.00018411980381005105,
+    "drop_rate": 0.0,
+    "label_smoothing": 0.05
+  },
+  "runtime_versions": {
+    "python": "3.12.3",
+    "torch": "2.14.1+cu130",
+    "cuda_runtime": "13.0",
+    "GPU": "NVIDIA GeForce RTX 3060 Ti",
+    "timm": "1.0.30",
+    "albumentations": "2.0.8",
+    "scikit-learn": "1.9.1",
+    "optuna": "5.0.0",
+    "kagglehub": "1.0.2"
+  }
+}
